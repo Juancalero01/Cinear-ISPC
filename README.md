@@ -1,2 +1,2 @@
-# PROY-ISPC
+# CineAr - ISPC
 PROYECTO ISPC
