@@ -77,6 +77,13 @@ nav div{
     text-decoration: none;
 
 }
+.edit-post{
+    color: #e3b76c ;
+    border-color: #e3b76c;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+
+}
 
 .icono-crear{
     padding: 1rem;
@@ -170,6 +177,7 @@ nav div{
 .link-btn-login{
     color: #7DE2D1;
 }
+
 @media screen and (max-width:800px){
     .inicioimg{
         display:none;
@@ -222,6 +230,11 @@ nav div{
 }
 .peliculas li img{
     max-width: 100%;
+}
+.btn-success{
+    background-color: #7DE2D1;
+    color: #000;
+    font-weight: bold;
 }
 @media screen and (max-width:500px){
     .peliculas{

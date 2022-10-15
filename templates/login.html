@@ -19,29 +19,32 @@
     <nav class="navbar navbar-expand-lg bg">
         <div class="container-fluid">
         <img class="icon" src="../assets/favicon.ico" alt="icon">
-        <div><a class="nav-el" href="/index.html">CINEar</a></div>
+        <div><a class="nav-el" href="../index.html">CINEar</a></div>
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./categorias.html">categorías</a>
+                <a class="nav-link active" aria-current="page" href="../templates/post_detalle.html">Post</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./contacto.html">contacto</a>
+                <a class="nav-link" href="../templates/categorias.html">Categorías</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./sobre_nosotros.html">sobre nosotros</a>
+                <a class="nav-link active" aria-current="page" href="../templates/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./registro.html">registrate</a>
+                <a class="nav-link" href="../templates/sobre_nosotros.html">Sobre nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./login.html">login</a>
+                <a class="nav-link active" aria-current="page" href="../templates/registro.html">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../templates/login.html">Login</a>
               </li>
             </ul>
 
@@ -58,16 +61,18 @@
             <h1 class="post-h1">Login</h1>
             <form class="form-registro">
                 <h1>Bienvenido/a</h1>
-                <h3>Inicia Sesión en Cinear</h3>
+                <h3>Inicia Sesión en CINEar</h3>
 
                 <div class="iniciocampos">
                     <input type="email" placeholder="ingresesucorre@gmail.com" name="correo">
                     <input type="password" placeholder="************" name="contrasena">
                     <div>
-                        <input type="button" class="btn-crear" value="Ingresa">
+                     
+                      <a class="btn btn-success" href="./sesion_iniciada/home_logeado.html" role="button">Ingresar</a>
                         <div>
                             <p>¿Aún no tenés una cuenta?<br>
-                            <a class="link-btn-login" href="#">Registrate</a></div></p>>
+                            <a class="link-btn-login" href="../templates/registro.html">Registrate</a></div></p>>
+                            
                         </div>
                     </div>
                 </div>
