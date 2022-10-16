@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #131515;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.post-h1, .post-subtitulo{
+.post-h1,
+.post-subtitulo {
     color: #7DE2D1;
     font-family: 'Lexend Deca', sans-serif;
     margin-top: 4rem;
@@ -20,27 +21,28 @@ a{
     margin-top: 2.5rem;
 }
 
-.nav-el{
+.nav-el {
     color: #FFFFFF;
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
     list-style: none;
     margin-right: 20rem;
-    
+
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link {
     color: white;
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
     font-size: 16px;
 }
 
-nav div{
+nav div {
     color: #131515;
 }
 
-.icon{
+.icon {
     height: 34px;
     width: 38px;
     left: 113px;
@@ -49,7 +51,8 @@ nav div{
 }
 
 /* POST_DETALLE HTML */
-.creador_post, .fecha_post{
+.creador_post,
+.fecha_post {
     color: #A5A5A5;
     font-family: 'Lexend Deca', sans-serif;
     font-size: small;
@@ -58,7 +61,7 @@ nav div{
     text-align: center;
 }
 
-.post{
+.post {
     text-align: center;
     margin-right: 3rem;
     margin-left: 3rem;
@@ -70,7 +73,7 @@ nav div{
     font-size: 4rem;
 }
 
-.crear-post{
+.crear-post {
     color: #7DE2D1;
     border-color: #7DE2D1;
     font-family: 'Lexend Deca', sans-serif;
@@ -78,12 +81,12 @@ nav div{
 
 }
 
-.icono-crear{
+.icono-crear {
     padding: 1rem;
     margin: 1rem;
 }
 
-.fecha{
+.fecha {
     color: #FFFFFF;
     font-weight: bold;
     width: 50px;
@@ -93,7 +96,7 @@ nav div{
 
 }
 
-.titulo-post{
+.titulo-post {
     display: flex;
     height: 50px;
     text-align: center;
@@ -101,7 +104,7 @@ nav div{
 }
 
 
-.leer_mas{
+.leer_mas {
     text-align: center;
     margin-top: 4rem;
     margin-right: 3rem;
@@ -109,7 +112,8 @@ nav div{
     color: #FFFFFF;
 }
 
-.autor, .categoria{
+.autor,
+.categoria {
     font-style: italic;
     text-align: center;
     margin-right: 3rem;
@@ -118,7 +122,7 @@ nav div{
     color: #7DE2D1;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #7DE2D1;
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
@@ -127,24 +131,27 @@ nav div{
 
 
 /*POST FORM*/
-.form-label, .date-label, .file-label, #file{
+.form-label,
+.date-label,
+.file-label,
+#file {
     color: #FFFFFF;
     opacity: 50%;
 }
 
-#file{
+#file {
     opacity: 100%;
 }
 
-.post-form{
+.post-form {
     margin: 3rem;
 }
 
-.p-fecha{
+.p-fecha {
     margin-top: 1rem;
 }
 
-.btn-success{
+.btn-success {
     background-color: #7DE2D1;
     color: #131515;
     font-weight: bold;
@@ -155,7 +162,7 @@ nav div{
     border-radius: 0rem;
 }
 
-.form-control{
+.form-control {
     border-radius: 0rem;
     border-color: #7DE2D1;
     border-width: 3px;
@@ -163,7 +170,7 @@ nav div{
     margin-bottom: 1rem;
 }
 
-.crea-post_h1{
+.crea-post_h1 {
     color: #FFFFFF;
     font-family: 'Lexend Deca', sans-serif;
     margin-top: 4rem;
