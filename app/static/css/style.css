@@ -177,3 +177,16 @@ nav div {
     text-align: center;
     margin-top: 2.5rem;
 }
+
+.no-me-interesa {
+    background-color: #7DE2D1;
+    border: #131515;
+    padding: 10px 48px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.no-me-interesa:hover {
+    background-color:#7DE2;
+
+}
