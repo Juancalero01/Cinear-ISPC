@@ -1,0 +1,2 @@
+En desarrollo se utilizara Sqlite3
+En producción se utilizara Mysql
