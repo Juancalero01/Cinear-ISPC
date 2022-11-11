@@ -1,2 +1,0 @@
-# CineAr - ISPC
-PROYECTO ISPC
