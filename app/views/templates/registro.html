@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
   <link rel="stylesheet" href="../css/style.css">
   <title>Registrate</title>
 </head>
-
 <body>
 
   <nav class="navbar navbar-expand-lg bg">
@@ -58,29 +56,65 @@
     </div>
   </nav>
 
-  <main class="cuerpo-registro">
+  <main class="cuerpo-registro "  >
     <div class="inicioimg">
       <img src="../img/Side-Background-Outer.png" alt="Inicio de sesión">
     </div>
-    <div class="inicioreg">
-      <h1 class="post-h1">Registrate</h1>
-      <form class="form-registro">
-        <h1>Bienvenido/a</h1>
-        <h3>Registrate en Cinear</h3>
+  <div class="inicioreg">
 
-        <div class="iniciocampos">
-          <input type="text" placeholder="Nombre de usuario" name="Nombre">
-          <input type="email" placeholder="ingresesucorre@gmail.com" name="correo">
-          <input type="password" placeholder="************" name="contrasena">
-          <input type="password" placeholder="************" name="contrasena-repetida">
-          <div>
+    <h1 class="post-h1"> Bienvenido </h1>
+      <form id=myform class="form-registro needs-validation " novalidate onsubmit="onEnviar()" >
+      
+        <h3>Registrate en CINEar</h3>
 
-            <a class="btn btn-success" href="./sesion_iniciada/home_logeado.html" role="button">Crear Cuenta</a>
-            <div>
-              <p>¿Ya tenés una cuenta?<br>
-                <a class="link-btn-login" href="../templates/login.html">Login</a>
-            </div>
-            </p>>
+        <div class="mb-3">
+           <label for="correo" class="form-label">Correo Electronico</label>
+           <input type="email" class="form-control" id="correo " placeholder="ingresesucorre@gmail.com" required minlength="8">
+       
+           <div class="invalid-feedback"> 
+              Ingrese el Corre Electronico es obligatorio y debe tener el formato correspondiente.
+           </div>
+          
+        </div>
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre </label>
+          <input type="name" class="form-control" id="nombre "aria-describedby="nombre" placeholder="Nombre Completo" required minlength="3">
+          <div class="invalid-feedback"> 
+          Ingrese el  Nombre.
+         </div>
+        
+       
+        </div>
+
+       <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password " placeholder="Minimo 5 Caracteres " required minlength="5">
+     
+        <div class="invalid-feedback"> 
+          Ingrese La contraseña es obligatoria  y debe tener el formato correspondiente.
+        </div>
+      
+       </div>
+
+      <div class="mb-3">
+        <label for="passwordrepetida" class="form-label">Repetir Contraseña</label>
+        <input type="password" class="form-control" id="passwordrepetida " placeholder="Repita la Contraseña " required minlength="5">
+     
+        <div class="invalid-feedback"> 
+         Ingrese La contraseña es obligatoria y debe ser igual a la ingresada anteriormente.
+          </div>
+   
+     
+      </div>
+
+
+       <button  type="submit" class="btn btn-success"  >Crear Cuenta</button>
+ 
+           <p>¿Ya tenés una cuenta?<br>
+             <a class="link-btn-login" href="../templates/login.html">Login</a>
+            
+            </p>
           </div>
         </div>
     </div>
@@ -91,12 +125,52 @@
 
 
 
-  <!-- Links JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    <!-- Links JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
 
-  <script src="./js/main.js"></script>
-</body>
+    <script src="./js/main.js"></script>
 
-</html>
+    <SCript>
+
+      // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+    (function () {
+      'use strict'
+
+      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Bucle sobre ellos y evitar el envío
+      Array.from(forms).forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+             form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </SCript>
+
+    <script>
+
+        function onEnviar() {
+          let form = document.getElementById("myform")
+          let email = document.forms["myform"]["correo"].value;
+          let password = document.forms["myform"]["password","passwordrepetida"].value;
+          let nombre = document.forms["myform"]["nombre"].value;
+
+           if (form.checkValidity()) {
+         
+            // alert ("El correo electronico es:" + email);
+            // alert ("La contraseña es:" + password);
+            alert (" Validacion Correcta.")
+          
+           }
+          }
+
+      </script>
+ </body>
+</html> 
